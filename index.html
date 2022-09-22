@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <!-- Local Stylesheet Link -->
     <link rel="stylesheet" href="style.css">
     <!-- Owl Carousel Stylesheet links -->
@@ -12,11 +11,65 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"/>
     <!--Light Gallery Stylesheet Link -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/css/lightgallery.min.css"/>
+    <!-- Boxicon Stylesheet Link -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <title>Taste Delight | Restaurant Website</title>
 </head>
 <body>
+    <!-- Navigation Bar Start -->
+    <nav id="navbar" class="navbar flex-row">
+        <div class="nav-icon menu-btn-wrapper">
+            <i id="menu-btn" class="menu-btn bx bx-menu"></i>
+        </div>
 
+        <div class="logo">
+            <h5>Taste<span>Delight</span></h5>
+        </div>
 
+        <ul id="nav-items" class="nav-items">
+            <li><a href="#home" class="nav-links">Home</a></li>
+            <li><a href="#about" class="nav-links">About</a></li>
+            <li><a href="#menu" class="nav-links">Menu</a></li>
+            <li><a href="#reservation" class="nav-links">Reservation</a></li>
+            <li><a href="#gallery" class="nav-links">Gallery</a></li>
+            <li><a href="#blog" class="nav-links">Blog</a></li>
+            <li><a href="#contact" class="nav-links">Contact</a></li>
+        </ul>
+
+        <ul class="nav-btns">
+            <div class="search-btn-wrapper nav-icon">
+                <i class="searchbtn bx bx-search-alt-2"></i>
+                <div id="search-form" class="search-form">
+                    <form action="#">
+                        <input type="search" name="search" id="search" placeholder="Search">
+                        <button type="submit" class="bx bx-search-alt-2"></button>
+                    </form>
+                </div>
+            </div>
+            <div class="cart-btn-wrapper nav-icon">
+                <i class="cartbtn bx bx-cart"></i>
+                <div id="cart" class="cart flex-row">
+                    <span>No Products in the cart</span>
+                </div>
+            </div>
+            <div class="nav-icon">
+                <i class="darkbtn bx bx-moon"></i>
+            </div>
+        </ul>
+    </nav>
+    <!-- Navigation Bar End -->
+
+    <!-- Home Section Start -->
+    <section id="home">
+        <div class="home-container">
+            <div class="home-content">
+                <p class="sub-heading">Taste Delight</p>
+                <h1 class="heading">Taste The Magic!</h1>
+            </div>
+        </div>
+    </section>
+    <!-- Home Section End -->
+    <section></section>
 
     <!-- jQuery Script -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
