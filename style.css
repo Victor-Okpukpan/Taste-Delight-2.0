@@ -42,11 +42,12 @@ html {
 /* Scroll Bar */
 ::-webkit-scrollbar {
     width: 10px;
-    background-color: var(--background-color-2);
+    background-color: var(--background-color-1);
     color: white;
 }
 ::-webkit-scrollbar-thumb{
     background-color: var(--primary-color);
+    border-radius: 10px;
 }
 
 /* Default Settings */
@@ -290,6 +291,7 @@ input[type="search"]::-webkit-search-cancel-button {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    
     animation-name: background;
     animation-direction: alternate-reverse;
     animation-duration: 20s;
@@ -341,4 +343,240 @@ input[type="search"]::-webkit-search-cancel-button {
     font-size: 10vw;
     font-weight: 400;
     margin-bottom: 40px;
+}
+
+/* About Section Style */
+#about {
+    position: relative;
+    padding: 0 4.5rem;
+    background-color: var(--background-color-1);
+    justify-content: flex-start;
+}
+
+.booking-form {
+    width: 30%;
+    background-color: var(--primary-color);
+    padding: 50px 30px 30px 30px;
+}
+.booking-form span {
+    font-size: 30px;
+    color: white;
+    margin-bottom: 5px;
+}
+.booking-form h2 {
+    font-size: 40px;
+    color: white;
+    line-height: 1;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.form-row {
+    position: relative;
+}
+.booking-form form input {
+    width: 100%;
+    font-size: 16px;
+    padding: 12px 10px;
+    outline: none;
+    border: 1px solid white;
+    color-scheme: dark;
+    margin-bottom: 10px;
+    background-color: transparent;
+}
+.booking-form form input::placeholder{
+    color: whitesmoke;
+    font-weight: 500;
+}
+.booking-form form .form-row input {
+    padding-left: 35px;
+}
+.booking-form form .form-row i{
+    font-size: 20px;
+    color: white;
+    position: absolute;
+    top: 12px;
+    left: 8px;
+}
+.btn1 {
+    position: relative;
+    width: 100%;
+    background-color: white;
+    border: 1px solid white;
+    outline: none;
+    color: black;
+    padding: 20px 30px;
+    font-size: 18px;
+    font-weight: 400;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+.btn1:hover {
+    color: white;
+    background-color: transparent;
+}
+
+#about .text-wrapper {
+    padding: 10px 60px;
+    width: 50%;
+}
+#about .text-wrapper h3 {
+    font-size: 60px;
+    margin: 20px 0;
+}
+
+/* Working Hours */
+#work-hours {
+    padding: 150px 0;
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('./images/working.jpg');
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    text-align: center;
+}
+#work-hours .text-wrapper h2 {
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 24px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    margin-top: 20px;
+}
+#work-hours .text-wrapper p {
+    color: white;
+}
+
+/* Section Heading Styling */
+.section-heading {
+    text-align: center;
+    margin: 30px 0;
+}
+.section-heading h3 {
+    font-size: 60px;
+}
+
+.square-wrapper {
+    position: relative;
+    margin: 1rem;
+}
+.square-wrapper::after, .square-wrapper::before {
+    content: "";
+    display: inline-block;
+    margin: 0 0.5rem;
+    width: 100px;
+    height: 2px;
+    background-color: var(--primary-color);
+}
+.square {
+    background-color: var(--primary-color);
+    transform: rotate(45deg);
+    margin: 0 0.25rem;
+}
+.square:nth-child(1){
+    width: 8px;
+    height: 8px;
+}
+.square:nth-child(2){
+    width: 10px;
+    height: 10px;
+}
+.square:nth-child(3){
+    width: 8px;
+    height: 8px;
+}
+
+/* Menu Section Styling */
+#menu {
+    padding-bottom: 70px;
+    background-color: var(--background-color-2);
+    width: 100%;
+}
+
+.menu-tabs {
+    justify-content: center;
+    margin: 20px 0;
+    width: 100%;
+    padding: 0 1.5rem;
+    flex-wrap: nowrap;
+    text-align: center;
+}
+.menu-tab-item {
+    font-size: 17px;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    margin: 8px 15px;
+    width: 100%;
+    padding: 20px 10px;
+    transition: all 0.3s ease-in-out;
+    background-color: var(--background-color-1);
+    border-radius: 5px;
+    border: 1px solid var(--primary-color);
+    position: relative;
+}
+
+.menu-tab-item span {
+    pointer-events: none;
+    font-size: 20px;
+    transition: all 0.3s ease-in-out;
+    font-weight: 500;
+    color: var(--heading-color);
+}
+
+.menu-tab-item:hover, .menu-tab-item.active {
+    background-color: var(--primary-color);
+}
+.menu-tab-item:hover span, .menu-tab-item.active span{
+    color: white;
+}
+
+/* Menu Content */
+.menu-tab-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.menu-item{
+    display: flex;
+    align-items: center;
+    width: 50%;
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: all 0.1s ease-in-out;
+}
+.menu-item .menu-item-inner{
+    background-color: var(--background-color-1);
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    width: 100%;
+    border: 1px solid var(--grey-color);
+}
+.menu-item .menu-item-inner .food-img{
+    width: 130px;
+    display: inline-block;
+    margin-right: 15px;
+}
+.menu-item .menu-item-inner .food-text{
+    width: 100%;
+}
+.menu-item .menu-item-inner .food-text .food-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.menu-item .menu-item-inner .food-text .food-details h2 {
+    white-space: nowrap;
+}
+.menu-item .menu-item-inner .food-text .food-details .line {
+    width: 100%;
+    margin: 0 10px;
+    height: 1px;
+    background-color: var(--grey-color);
+}
+.menu-item .menu-item-inner .food-text .food-details .price {
+    color: var(--primary-color);
+    font-family: var(--font-family-2);
+    font-size: 32px;
 }

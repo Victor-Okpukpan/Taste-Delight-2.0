@@ -48,3 +48,15 @@ darkBtn.onclick = function(){
         darkBtn.classList.remove("bx-sun");
     }
 }
+
+// Menu Navigation Functionality
+let menuTab = document.querySelector(".menu-tabs");
+menuTab.addEventListener("click", function(e){
+    if(e.target.classList.contains("menu-tab-item") && !e.target.classList.contains("active")){
+        menuTab.querySelector(".active").classList.remove("active");
+
+        e.target.classList.add("active");
+    } else {
+        return;
+    }
+})

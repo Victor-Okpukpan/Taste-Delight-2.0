@@ -29,8 +29,8 @@
         <ul id="nav-items" class="nav-items">
             <li><a href="#home" class="nav-links">Home</a></li>
             <li><a href="#about" class="nav-links">About</a></li>
-            <li><a href="#menu" class="nav-links">Menu</a></li>
             <li><a href="#reservation" class="nav-links">Reservation</a></li>
+            <li><a href="#menu" class="nav-links">Menu</a></li>
             <li><a href="#gallery" class="nav-links">Gallery</a></li>
             <li><a href="#blog" class="nav-links">Blog</a></li>
             <li><a href="#contact" class="nav-links">Contact</a></li>
@@ -69,7 +69,154 @@
         </div>
     </section>
     <!-- Home Section End -->
-    <section></section>
+
+    <!-- About Section Start -->
+    <section id="about" class="flex-row">
+        <div class="text-wrapper">
+            <h3>ABOUT US</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, aut labore. Animi sapiente, dolorum hic reprehenderit odio doloremque molestiae voluptatem ullam veniam placeat, sit officiis, quis nulla! Repellat nesciunt eligendi, voluptas corporis maxime, unde, sit illum blanditiis voluptatibus ipsum nulla.</p>
+        </div>
+
+        <div class="booking-form">
+            <span>Make A</span>
+            <h2>RESERVATION</h2>
+            <form action="#">
+                <div class="form-row">
+                    <i class='bx bx-user'></i>
+                    <input type="text" name="" id="" placeholder="Name">
+                </div>
+                <div class="form-row">
+                    <i class='bx bx-envelope'></i>
+                    <input type="email" name="" id="" placeholder="Email">
+                </div>
+                <div class="form-row">
+                    <i class='bx bx-phone'></i>
+                    <input type="tel" name="" id="" placeholder="Phone">
+                </div>
+                <input type="date" name="" id="" placeholder="Date">
+                <input type="time" name="" id="" placeholder="Time">
+                <div class="form-row">
+                    <i class='bx bx-user-plus'></i>
+                    <input type="number" name="" id="" placeholder="No. of Guests">
+                </div>
+                <button type="submit" class="btn1">Book A Table</button>
+            </form>
+        </div>
+    </section>
+    <!-- About Section End -->
+
+    <!-- Working Hours Start -->
+    <section id="work-hours">
+        <div class="text-wrapper">
+            <h2>Monday - Saturday</h2>
+            <p>8am - 11pm</p>
+
+            <h2>Sundays</h2>
+            <p>1pm - 10pm</p>
+        </div>
+    </section>
+    <!-- Working Hours End -->
+
+    <!-- Menu Section Start -->
+    <section id="menu" class="menu-wrapper">
+        <div class="section-heading">
+            <h3>Our Menu</h3>
+            <div class="square-wrapper flex-row">
+                <div class="square"></div>
+                <div class="square"></div>
+                <div class="square"></div>
+            </div>
+        </div>
+
+        <!-- Menu Navigation Start -->
+        <div class="menu-tabs flex-row">
+            <div class="menu-tab-item active">
+                <span>Main Dishes</span>
+            </div>
+            <div class="menu-tab-item">
+                <span>Desserts</span>
+            </div>
+            <div class="menu-tab-item">
+                <span>Drinks</span>
+            </div>
+            <div class="menu-tab-item">
+                <span>All</span>
+            </div>
+        </div>
+        <!-- Menu Navigation End -->
+
+        <!-- Main Dish -->
+        <div id="main-dishes" class="menu-tab-content show">
+            <!-- Menu Item Start -->
+            <div class="menu-item">
+                <div class="menu-item-inner">
+                    <div class="food-img">
+                        <img src="./images/food-item-1.jpg" alt="#">
+                    </div>
+                    <div class="food-text">
+                        <div class="food-details">
+                            <h2>Main Dish Item</h2>
+                            <div class="line"></div>
+                            <span class="price">$50</span>
+                        </div>
+                        <div class="food-description">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Menu Item End -->
+        </div>
+
+        <!-- Desserts -->
+        <div id="desserts" class="menu-tab-content">
+            <!-- Menu Item Start -->
+            <div class="menu-item">
+                <div class="menu-item-inner">
+                    <div class="food-img">
+                        <img src="./images/dessert-img.jpg" alt="#">
+                    </div>
+                    <div class="food-text">
+                        <div class="food-details">
+                            <h2>Dessert Item</h2>
+                            <div class="line"></div>
+                            <span class="price">$50</span>
+                        </div>
+                        <div class="food-description">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Menu Item End -->
+        </div>
+
+        <!-- Drinks -->
+        <div id="drinks" class="menu-tab-content">
+            <!-- Menu Item Start -->
+            <div class="menu-item">
+                <div class="menu-item-inner">
+                    <div class="food-img">
+                        <img src="./images/drink-img.jpg" alt="#">
+                    </div>
+                    <div class="food-text">
+                        <div class="food-details">
+                            <h2>Drink Item</h2>
+                            <div class="line"></div>
+                            <span class="price">$50</span>
+                        </div>
+                        <div class="food-description">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Menu Item End -->
+        </div>
+        <!-- All -->
+        <div id="all" class="menu-tab-content"></div>
+    </section>
+    <!-- Menu Section End -->
 
     <!-- jQuery Script -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
