@@ -533,6 +533,10 @@ input[type="search"]::-webkit-search-cancel-button {
 
 /* Menu Content */
 .menu-tab-content {
+    display: none;
+    padding: 0 1rem;
+}
+.menu-tab-content.show{
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -543,7 +547,10 @@ input[type="search"]::-webkit-search-cancel-button {
     width: 50%;
     padding: 10px 15px;
     cursor: pointer;
-    transition: all 0.1s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+.menu-item:hover{
+    transform: scale(1.05);
 }
 .menu-item .menu-item-inner{
     background-color: var(--background-color-1);
@@ -579,4 +586,26 @@ input[type="search"]::-webkit-search-cancel-button {
     color: var(--primary-color);
     font-family: var(--font-family-2);
     font-size: 32px;
+}
+.menu-item .menu-item-inner .food-text .food-details .food-description {
+    color: var(--text-color);
+    font-size: 16px;
+}
+
+/* Gallery Section Styling */
+#gallery{
+    background-color: var(--background-color-2);
+    padding: 70px 0;
+}
+.gallery-wrapper .gallery-img{
+    width: 24rem;
+    margin: 10px 5px;
+    overflow: hidden;
+}
+
+.gallery-wrapper .gallery-img img {
+    transition: all 0.5s ease-in-out;
+}
+.gallery-wrapper .gallery-img:hover img {
+    transform: scale(1.05);
 }

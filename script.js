@@ -53,9 +53,17 @@ darkBtn.onclick = function(){
 let menuTab = document.querySelector(".menu-tabs");
 menuTab.addEventListener("click", function(e){
     if(e.target.classList.contains("menu-tab-item") && !e.target.classList.contains("active")){
+        const targetLink = e.target.getAttribute("data-link");
+
         menuTab.querySelector(".active").classList.remove("active");
 
         e.target.classList.add("active");
+
+        let menuWrapper = document.querySelector(".menu-wrapper");
+
+        menuWrapper.querySelector(".menu-tab-content.show").classList.remove("show");
+
+        menuWrapper.querySelector(targetLink).classList.add("show");
     } else {
         return;
     }
