@@ -67,4 +67,42 @@ menuTab.addEventListener("click", function(e){
     } else {
         return;
     }
+});
+
+// Team Section Carousel
+$('.chefs-carousel').owlCarousel({
+    loop: true,
+    margin: 20,
+    dots: true,
+    nav: false,
+    responsive:{
+        0:{
+            items: 1
+        },
+        600:{
+            items: 2
+        },
+        1000:{
+            items: 3
+        }
+    }
+})
+
+// Review Section Carousel
+$('.review-carousel').owlCarousel({
+    loop: true,
+    margin: 10,
+    dots: false,
+    nav: false,
+    responsive:{
+        0:{
+            items: 1
+        },
+        750:{
+            items: 2
+        },
+        1000:{
+            items: 3
+        }
+    }
 })
