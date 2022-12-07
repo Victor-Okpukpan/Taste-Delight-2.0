@@ -907,12 +907,12 @@ footer{
         font-size: 20px;
     }
     .logo h5{
-        font-size: 26px;
+        font-size: 20px;
         transform: translateY(-1.5px);
         margin-left: 3.75rem;
     }
     .logo h5 span{
-        font-size: 26px;
+        font-size: 20px;
     }
     .menu-btn-wrapper{
         display: block!important;
@@ -1016,7 +1016,7 @@ footer{
 
 @media (max-width: 480px){
     #navbar{
-        margin: 0 2px;
+        margin: 0 5px;
     }
     .logo {
         margin-left: 0.5rem;
