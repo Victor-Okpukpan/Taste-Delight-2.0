@@ -951,7 +951,7 @@ footer{
         display: block;
     }
     .nav-items.active{
-        height: 280px;
+        height: 300px;
         visibility: visible;
         opacity: 1;
     }
@@ -961,9 +961,12 @@ footer{
     }
 }
 @media (max-width: 850px){
+    #about{
+        margin: 30px 0;
+    }
     #about .text-wrapper{
         width: 70%;
-        margin: 0 auto;
+        margin: 0 auto 20px auto;
         text-align: center;
     }
     h1{
@@ -980,9 +983,10 @@ footer{
     }
     .menu-tabs{
         flex-wrap: wrap;
+        display: inline-block;
     }
     .menu-tab-item{
-        width: 40%;
+        width: 100%;
     }
 }
 @media (max-width: 780px){
@@ -1011,6 +1015,9 @@ footer{
 }
 
 @media (max-width: 480px){
+    #navbar{
+        margin: 0 2px;
+    }
     .logo {
         margin-left: 0.5rem;
         flex: auto;
@@ -1051,7 +1058,7 @@ footer{
         padding: 0;
     }
     .menu-tab-item{
-        width: 40%;
+        width: 95%;
         margin: 10px;
     }
     .menu-item{
