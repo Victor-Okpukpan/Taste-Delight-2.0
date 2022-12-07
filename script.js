@@ -10,6 +10,19 @@ let searchBtn = document.querySelector(".searchbtn");
 let cartBtn = document.querySelector(".cartbtn");
 let darkBtn = document.querySelector(".darkbtn");
 
+menuBtn.onclick = function(){
+    document.getElementById("nav-items").classList.toggle("active");
+
+    // Changes Icon
+    if(document.getElementById("nav-items").classList.contains("active")){
+        menuBtn.classList.remove("bx-menu");
+        menuBtn.classList.add("bx-x");
+    } else {
+        menuBtn.classList.add("bx-menu");
+        menuBtn.classList.remove("bx-x");
+    }
+}
+
 searchBtn.onclick = function(){
     document.getElementById("search-form").classList.toggle("active");
 
@@ -98,7 +111,26 @@ $('.review-carousel').owlCarousel({
         0:{
             items: 1
         },
-        750:{
+        600:{
+            items: 2
+        },
+        1000:{
+            items: 3
+        }
+    }
+})
+
+// Blog Section Carousel
+$('.blog-carousel').owlCarousel({
+    loop: true,
+    margin: 5,
+    dots: false,
+    nav: false,
+    responsive:{
+        0:{
+            items: 1
+        },
+        600:{
             items: 2
         },
         1000:{

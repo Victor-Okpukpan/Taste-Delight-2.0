@@ -13,6 +13,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/css/lightgallery.min.css"/>
     <!-- Boxicon Stylesheet Link -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- Animate On Scroll Library -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>Taste Delight | Restaurant Website</title>
 </head>
 <body>
@@ -72,12 +74,12 @@
 
     <!-- About Section Start -->
     <section id="about" class="flex-row">
-        <div class="text-wrapper">
+        <div class="text-wrapper" data-aos="fade-right" data-aos-duration="1000">
             <h3>ABOUT US</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, aut labore. Animi sapiente, dolorum hic reprehenderit odio doloremque molestiae voluptatem ullam veniam placeat, sit officiis, quis nulla! Repellat nesciunt eligendi, voluptas corporis maxime, unde, sit illum blanditiis voluptatibus ipsum nulla.</p>
         </div>
 
-        <div class="booking-form">
+        <div class="booking-form" data-aos="fade-left" data-aos-duration="1000">
             <span>Make A</span>
             <h2>RESERVATION</h2>
             <form action="#">
@@ -107,7 +109,7 @@
 
     <!-- Working Hours Start -->
     <section id="work-hours">
-        <div class="text-wrapper">
+        <div class="text-wrapper" >
             <h2>Monday - Saturday</h2>
             <p>8am - 11pm</p>
 
@@ -129,7 +131,7 @@
         </div>
 
         <!-- Menu Navigation Start -->
-        <div class="menu-tabs flex-row">
+        <div class="menu-tabs flex-row" data-aos="zoom-in" data-aos-duration="1000" data-aos-anchor-placement="bottom-bottom">
             <div class="menu-tab-item active" data-link="#main-dishes">
                 <span>Main Dishes</span>
             </div>
@@ -139,14 +141,11 @@
             <div class="menu-tab-item" data-link="#drinks">
                 <span>Drinks</span>
             </div>
-            <div class="menu-tab-item" data-link="#all">
-                <span>All</span>
-            </div>
         </div>
         <!-- Menu Navigation End -->
 
         <!-- Main Dish -->
-        <div id="main-dishes" class="menu-tab-content show">
+        <div id="main-dishes" class="menu-tab-content show" data-aos="zoom-in" data-aos-duration="1000" data-aos-anchor-placement="top-bottom">
             
             <!-- Menu Item Start -->
             <div class="menu-item">
@@ -673,7 +672,7 @@
             </div>
         </div>
 
-        <div class="chefs-carousel owl-carousel owl-theme">
+        <div class="chefs-carousel owl-carousel owl-theme" data-aos="fade-right" data-aos-duration="1000">
 
             <!-- Chefs Card Start -->
             <div class="chefs-card">
@@ -764,7 +763,7 @@
             </div>
         </div>
 
-        <div class="gallery-wrapper flex-row">
+        <div class="gallery-wrapper flex-row" data-aos="fade-right" data-aos-duration="1000">
 
             <!-- Gallery Image Start -->
             <a href="./images/Gallery/gallery-img-1.jpg" class="gallery-img">
@@ -834,7 +833,7 @@
             </div>
         </div>
 
-        <div class="review-carousel owl-carousel owl-theme">
+        <div class="review-carousel owl-carousel owl-theme" data-aos="fade-up" data-aos-duration="1000">
 
             <!-- Review Item Start -->
             <div class="review-item">
@@ -943,15 +942,158 @@
     </section>
     <!-- Review Section End -->
 
+    <!-- Blog Section Start -->
+    <section id="blog">
+        <div class="section-heading">
+            <h3>Recommendations</h3>
+            <div class="square-wrapper flex-row">
+                <div class="square"></div>
+                <div class="square"></div>
+                <div class="square"></div>
+            </div>
+        </div>
+
+        <div class="blog-carousel owl-carousel owl-theme" data-aos="fade-right" data-aos-duration="1000">
+
+             <!-- Blog Post Item Start -->
+             <a href="#" class="blog-post">
+                <div class="img-wrapper">
+                    <img src="./images/lasagna.jpg" alt="#">
+                    <div class="overlay"><i class="icon bx bx-link"></i></div>
+                </div>
+
+                <div class="text-wrapper">
+                    <h5 class="blog-title">Best Vegetable Lasagna</h5>
+                    <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, laudantium modi.</p>
+                    <p class="time"><i class="icon bx bx-time-five"></i>Time: <span>15min</span></p>
+                </div>
+            </a>
+            <!-- Blog Post Item End -->
+
+            <!-- Blog Post Item Start -->
+            <a href="#" class="blog-post">
+                <div class="img-wrapper">
+                    <img src="./images/Ratatouille.jpg" alt="#">
+                    <div class="overlay"><i class="icon bx bx-link"></i></div>
+                </div>
+
+                <div class="text-wrapper">
+                    <h5 class="blog-title">Ratatouille</h5>
+                    <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, laudantium modi.</p>
+                    <p class="time"><i class="icon bx bx-time-five"></i>Time: <span>15min</span></p>
+                </div>
+            </a>
+            <!-- Blog Post Item End -->
+
+            <!-- Blog Post Item Start -->
+            <a href="#" class="blog-post">
+                <div class="img-wrapper">
+                    <img src="./images/paella.jpg" alt="#">
+                    <div class="overlay"><i class="icon bx bx-link"></i></div>
+                </div>
+
+                <div class="text-wrapper">
+                    <h5 class="blog-title">Perfect Vegetable Paella</h5>
+                    <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, laudantium modi.</p>
+                    <p class="time"><i class="icon bx bx-time-five"></i>Time: <span>15min</span></p>
+                </div>
+            </a>
+            <!-- Blog Post Item End -->
+        </div>
+    </section>
+    <!-- Blog Section End -->
+
+    <!-- Footer Section Start -->
+    <footer id="footer">
+        <div class="footer-top flex-row">
+
+            <div class="flex-column">
+                <h4 class="logo-name">Taste Delight</h4>
+                <p class="desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis, maiores mollitia explicabo, doloremque eligendi, excepturi enim fuga perferendis aut praesentium dolorem possimus voluptates totam provident.</p>
+
+                <ul class="social-links">
+                    <li><a href="#"><i class="icon bx bxl-facebook"></i></a></li>
+                    <li><a href="#"><i class="icon bx bxl-twitter"></i></a></li>
+                    <li><a href="#"><i class="icon bx bxl-instagram"></i></a></li>
+                </ul>
+            </div>
+
+            <div class="flex-column">
+                <h4 class="heading">ADDRESS</h4>
+
+                <p class="desc">Lorem Ipsum Ave<br>Akwa-Ibom, Nigeria</p>
+                <p class="desc">P: +234 123 4456 789<br>E: contact@gmail.com</p>
+            </div>
+            
+            <div class="flex-column">
+                <h4 class="heading">OPEN HOURS</h4>
+                <ul class="timings flex-column">
+                    <li>
+                        <p class="days">Monday</p>
+                        <div class="time">9:00 - 23:00</div>
+                    </li>
+                    <li>
+                        <p class="days">Tuesday</p>
+                        <div class="time">9:00 - 23:00</div>
+                    </li>
+                    <li>
+                        <p class="days">Wednesday</p>
+                        <div class="time">9:00 - 23:00</div>
+                    </li>
+                    <li>
+                        <p class="days">Thursday</p>
+                        <div class="time">9:00 - 23:00</div>
+                    </li>
+                    <li>
+                        <p class="days">Friday</p>
+                        <div class="time">9:00 - 23:00</div>
+                    </li>
+                    <li>
+                        <p class="days">Saturday</p>
+                        <div class="time">9:00 - 23:00</div>
+                    </li>
+                    <li>
+                        <p class="days">Sunday</p>
+                        <div class="time">13:00 - 22:00</div>
+                    </li>
+                </ul>
+            </div>
+            
+            <div class="flex-column">
+                <h4 class="heading">MORE INFO</h4>
+                <a href="#menu">Menu</a>
+                <a href="#about">About</a>
+                <a href="#about">Reservation</a>
+                <a href="#blog">Blog</a>
+            </div>
+        </div>
+
+        <div class="footer-bottom flex-row">
+            <span>Copyright &copy 2022 All Rights Reserved | Made by Victor Okpukpan</span>
+        </div>
+    </footer>
+    <!-- Footer Section End -->
+
     <!-- jQuery Script -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
     <!-- Owl Carousel Script -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
     <!-- Light Gallery Script -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/js/lightgallery.min.js"></script>
+
+    <!-- Animate On Scroll Script -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+    <script>
+      AOS.init();
+    </script>
+
     <script>
         lightGallery(document.querySelector(".gallery-wrapper"));
     </script>
+
     <!-- Local JS Script -->
     <script src="./script.js"></script>
 </body>
