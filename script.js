@@ -108,7 +108,7 @@ $('.chefs-carousel').owlCarousel({
 $('.review-carousel').owlCarousel({
     loop: true,
     margin: 10,
-    dots: true,
+    dots: false,
     autoplay: true,
     autoplayTimeout: 5000,
     animateOut: 'fadeOut',
