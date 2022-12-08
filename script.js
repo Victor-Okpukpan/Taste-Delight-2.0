@@ -87,6 +87,9 @@ $('.chefs-carousel').owlCarousel({
     loop: true,
     margin: 20,
     dots: true,
+    autoplay: true,
+    autoplayTimeout: 5000,
+    animateOut: 'fadeOut',
     nav: false,
     responsive:{
         0:{
@@ -105,7 +108,10 @@ $('.chefs-carousel').owlCarousel({
 $('.review-carousel').owlCarousel({
     loop: true,
     margin: 10,
-    dots: false,
+    dots: true,
+    autoplay: true,
+    autoplayTimeout: 5000,
+    animateOut: 'fadeOut',
     nav: false,
     responsive:{
         0:{
@@ -125,6 +131,9 @@ $('.blog-carousel').owlCarousel({
     loop: true,
     margin: 5,
     dots: false,
+    autoplay: true,
+    autoplayTimeout: 5000,
+    animateOut: 'fadeOut',
     nav: false,
     responsive:{
         0:{
