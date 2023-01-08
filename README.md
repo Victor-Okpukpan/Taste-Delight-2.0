@@ -33,7 +33,7 @@ Users should be able to do the following:
 
 ### Links
 
-- Live Site URL: [app-generator-app.vercel.app](https://advice-generator-app-drab.vercel.app/)
+- Live Site URL: [taste-delight.vercel.app](https://taste-delight.vercel.app/)
 
 ## My process
 
